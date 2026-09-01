@@ -1,1 +1,60 @@
+-----------------------------------------------------------------------------------
+Drive Link for Assignment 3:
+-----------------------------------------------------------------------------------
+https://drive.google.com/file/d/1w90bww4wIO93IYBCgjIqzHmNGdWQGYky/view?usp=sharing
 
+
+
+-----------------------------------------------------------------------------------
+css_selector.py Code:
+-----------------------------------------------------------------------------------
+from selenium import webdriver
+driver = webdriver.Chrome()
+
+driver.get(r"file:///C:/Users/Disha/Documents/Python Automation/index.html")
+
+# ID starts with "user_"
+users = driver.find_elements(
+    "css selector",
+    '[id^="user_"]'
+)
+print("IDs starting with user_:")
+for user in users:
+    print(user.get_attribute("id"))
+
+# ID contains "login"
+login = driver.find_elements(
+    "css selector",
+    '[id*="login"]'
+)
+print("\nIDs containing login:")
+for x in login:
+    print(x.get_attribute("id"))
+
+# ID ends with "123"
+button = driver.find_elements(
+    "css selector",
+    '[id$="123"]'
+)
+print("\nIDs ending with 123:")
+for x in button:
+    print(x.get_attribute("id"))
+
+
+-------------------------------------------------------------------------------------
+index.html Code:
+-------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Challenge</title>
+</head>
+<body>
+    <h1>CSS Selector Challenge</h1>
+    <input id="user_12345" placeholder="Username">
+    <input id="user_67890" placeholder="Email">
+    <input id="admin_55555" placeholder="Admin">
+    <button id="login_button_123">Login</button>
+</body>
+</html>
