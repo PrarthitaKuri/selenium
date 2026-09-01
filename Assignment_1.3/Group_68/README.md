@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐍 Python Automation — Group 3
+# 🐍 Python Automation — Group 68
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Selenium](https://img.shields.io/badge/Selenium-WebDriver-43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://www.selenium.dev/)
